@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterViewInit,
    AfterContentChecked, AfterViewChecked, OnDestroy, Input } from '@angular/core';
-
+   import {ChangeDetectorRef } from '@angular/core';
 // tslint:disable-next-line: no-conflicting-lifecycle
 @Component({
   selector: 'app-root',
@@ -29,7 +29,7 @@ AfterViewInit, AfterViewChecked, OnDestroy{
    *  parameters and when it creates a new instance by calling new MyClass()
    *  it tries to find providers that match the types of the constructor parameters
    */
-  constructor() {
+  constructor(private cdref: ChangeDetectorRef ) {
     this.constructorCalled = 'Constructor Called';
     console.log('The Constructor is a default method of the class that' +
     'is executed when the class is instantiated and ensures proper initialisation of fields in the class and its subclasses.');
@@ -68,6 +68,7 @@ AfterViewInit, AfterViewChecked, OnDestroy{
   ngAfterContentChecked(){
     this.ngAfterContentCheckedCalled = 'ngAfterContentChecked called -> Called after ngAfterContentInit() and every subsequent ngDoCheck()';
     console.log('AfterContentChecked Called -> Called after ngAfterContentInit() and every subsequent ngDoCheck()');
+    this.cdref.detectChanges();
   }
 
   ngAfterViewInit(){
@@ -77,6 +78,7 @@ AfterViewInit, AfterViewChecked, OnDestroy{
   ngAfterViewChecked(){
     this.thisngAfterViewCheckedCalled = 'ngAfterViewChecked called -> Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().';
     console.log('ngAfterViewChecked Called -> Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().');
+    this.cdref.detectChanges();
   }
 
   ngOnDestroy(){
