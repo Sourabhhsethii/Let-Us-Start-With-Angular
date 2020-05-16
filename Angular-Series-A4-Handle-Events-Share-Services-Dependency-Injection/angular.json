@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Series-A4-Handle-Events-Share-Services-Dependency-Injection"
+    }
+  },
+  "defaultProject": "Angular-Series-A4-Handle-Events-Share-Services-Dependency-Injection",
+  "cli": {
+    "analytics": "4a2a7c9d-5608-4f1e-825c-92b74110526b"
+  }
 }
