@@ -8,7 +8,7 @@ import { SharedServiceService } from './shared-service.service';
 })
 export class AppComponent {
   title = 'Angular-Series-A4-Handle-Events-Share-Services-Dependency-Injection';
-  constructor(private sharedService: SharedServiceService){
+  constructor(public sharedService: SharedServiceService){
 
   }
 }
