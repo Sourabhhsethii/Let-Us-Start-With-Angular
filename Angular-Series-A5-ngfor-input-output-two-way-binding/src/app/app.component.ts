@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Series-A5-ngfor-input-output-two-way-binding';
+  @Output() update = new EventEmitter();
+  constructor(
+    @Inject('sharedservices') public sharedservices){
+
+  }
+  onUpdate(id, text){
+    this.sharedservices.update(id, text);
+  }
 }

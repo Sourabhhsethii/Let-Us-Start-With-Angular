@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Series-A5-ngfor-input-output-two-way-binding"
+    }
+  },
+  "defaultProject": "Angular-Series-A5-ngfor-input-output-two-way-binding",
+  "cli": {
+    "analytics": false
+  }
 }
