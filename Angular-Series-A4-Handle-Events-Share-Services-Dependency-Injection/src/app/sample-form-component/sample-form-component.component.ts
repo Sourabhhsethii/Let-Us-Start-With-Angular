@@ -20,12 +20,12 @@ import { Component, OnInit } from '@angular/core';
   <div>Click Event : {{clickevent}}<div>
   <div>Mouse Out Event Check : {{mouseOutEventCheck}}<div>
  `,
- styles: [
- ]
+  styles: [
+  ]
 })
 export class SampleFormComponentComponent implements OnInit {
 
-  constructor(public sharedServiceService: SharedServiceService){
+  constructor(public sharedServiceService: SharedServiceService) {
 
   }
   textInputClicked = '';
@@ -34,15 +34,15 @@ export class SampleFormComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick(event, textInput){
+  onClick(event, textInput) {
     console.log('Click Event :-' + textInput);
-    this.textInputClicked =  textInput;
-    this.clickevent = JSON.stringify(event );
+    this.textInputClicked = textInput;
+    this.clickevent = JSON.stringify(event);
   }
 
-  mouseOutEvent(event){
+  mouseOutEvent(event) {
     console.log('mouseOutEvent :-' + JSON.stringify(event));
-    this.mouseOutEventCheck = JSON.stringify(event );
+    this.mouseOutEventCheck = JSON.stringify(event);
   }
 
 }
