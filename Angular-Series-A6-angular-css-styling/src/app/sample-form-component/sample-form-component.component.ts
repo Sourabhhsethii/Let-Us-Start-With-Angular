@@ -1,11 +1,11 @@
 import { Component, OnInit, Inject, Input, Output, EventEmitter, NgModule, ViewEncapsulation, asNativeElements } from '@angular/core';
 
 @Component({
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   selector: 'app-sample-form-component',
   template: `
   <input #myIput type="text" [(ngModel)] = "message" [ngClass] = "{mouseclickedClass:ismouseclicked}"
-  (click)="mouseclick()" (mouseleave)="ismouseclicked = false">
+  (click)="mouseclick()" (mouseout)="ismouseclicked = false">
   <button class="white bg-red code" (click)="update.emit({text:message})"> click Me!</button>
   `,
   styles: [ `
