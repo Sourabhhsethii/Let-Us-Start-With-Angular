@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Series-A6-angular-css-styling"
+    }
+  },
+  "defaultProject": "Angular-Series-A6-angular-css-styling",
+  "cli": {
+    "analytics": false
+  }
 }
