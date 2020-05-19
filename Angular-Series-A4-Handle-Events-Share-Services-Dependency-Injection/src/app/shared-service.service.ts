@@ -10,7 +10,7 @@ export class SharedServiceService {
   messageObject = [
     'Hello Sourabh, We are doing POC',
     'Let\'s have another POC on Dependency Injection in Angular',
-    'It will be easy to learn after this article where we dicuss DI in details'
+    'It will be easy to learn after this article where we discuss DI in details'
   ];
 
   constructor() { }
