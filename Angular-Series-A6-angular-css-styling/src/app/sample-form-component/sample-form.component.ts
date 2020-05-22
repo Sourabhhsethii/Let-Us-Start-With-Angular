@@ -28,7 +28,7 @@ import { Component, OnInit, Inject, Input, Output, EventEmitter, NgModule, ViewE
   `
   ]
 })
-export class SampleFormComponentComponent implements OnInit {
+export class SampleFormComponent implements OnInit {
   @Input() message = '';
   @Output() update = new EventEmitter();
   public ismouseclicked = false;
