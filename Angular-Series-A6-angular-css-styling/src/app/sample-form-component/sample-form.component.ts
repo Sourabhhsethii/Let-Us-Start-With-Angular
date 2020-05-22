@@ -5,7 +5,7 @@ import { Component, OnInit, Inject, Input, Output, EventEmitter, NgModule, ViewE
   selector: 'app-sample-form-component',
   template: `
   <input #myIput type="text" [(ngModel)] = "message" [ngClass] = "{mouseclickedClass:ismouseclicked}"
-  (click)="mouseclick()" (mouseout)="ismouseclicked = false">
+  (click)="mouseClick()" (mouseout)="ismouseclicked = false">
   <button class="white bg-red code" (click)="update.emit({text:message})"> click Me!</button>
   `,
   styles: [ `
@@ -39,7 +39,7 @@ export class SampleFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  mouseclick(){
+  mouseClick(){
     this.ismouseclicked =  true;
   }
 
