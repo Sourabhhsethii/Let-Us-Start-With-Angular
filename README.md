@@ -35,3 +35,7 @@
 
 ![Alt text](https://github.com/Sourabhhsethii/Let-Us-Start-With-Angular/blob/master/A6.png?raw=true "Title")
 
+## A7) Angular-Series: Angular Building Blocks
+
+![Alt text](https://github.com/Sourabhhsethii/Let-Us-Start-With-Angular/blob/master/A7.png?raw=true "Title")
+
